@@ -1,0 +1,139 @@
+.Title{
+	font-size: 30px;
+	margin: 10px;
+	text-align: center;
+	font-family: sans-serif;
+	opacity: 80%;
+
+}
+body{
+	margin: 0;
+	height: 100vh;
+	display: grid;
+	grid-template-columns: 300px 1fr;
+	grid-template-rows: 60px 1fr;
+	grid-template-areas: 
+	"side header"
+	"side main";
+}
+.Head{
+	margin-top: 10px;
+	margin-bottom: 50px;
+	border-radius: 10px;
+	padding: 10px;
+	background-color: white;
+	opacity: 80%;
+}
+.tiles{
+	margin: 10px;
+	border-radius: 10px;
+	padding: 10px;
+	background: linear-gradient(to right, white, grey);
+	
+}
+.S-out{
+	margin-top: 540px;
+
+	border-radius: 10px;
+	padding: 10px;
+	background-color: white;
+
+}
+.header{
+	background-color: black;
+	grid-area: header;
+	opacity: 80%;
+}
+
+.sidebar{
+	background-color: #1c1f23;
+	grid-area: side;
+}
+
+.main
+{
+	background-color: #c3c5ca;
+	padding: 25px;
+	grid-area: main;
+	background-image: url("pics/bg2.gif");
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr;
+	grid-template-areas: 
+	"c1 c2 c3"
+	"c4 c4 c5" 
+	"c4 c4 c6";
+	grid-gap: 20px;
+
+}
+.Card{
+	background-color: #f6f7f9;
+	border-radius: 10px;
+}
+
+.Card:nth-child(1){
+	grid-area: c1;
+	background-image: url("pics/Pchart.png");
+	height: 100%;
+	width: 100%;
+	background-position: center;
+	background-size: cover;
+	opacity: 80%
+}
+
+.Card:nth-child(2){
+	grid-area: c2;
+	background-image: url("pics/msg.png");
+	height: 100%;
+	width: 100%;
+	background-position: center;
+	background-size: cover;
+	opacity: 80%
+}
+.Card:nth-child(3){
+	grid-area: c3;
+	background-image: url("pics/NyanC.gif");
+	height: 100%;
+	width: 100%;
+	background-position: center;
+	background-size: cover;
+	opacity: 80%
+}
+.Card:nth-child(4){
+	grid-area: c4;
+	background-image: url("pics/Bgraph.jpg");
+	height: 100%;
+	width: 100%;
+	background-position: center;
+	background-size: cover;
+	opacity: 80%
+}
+.Card:nth-child(5){
+	grid-area: c5;
+	background-image: url("pics/NyanC.gif");
+	height: 100%;
+	width: 100%;
+	background-position: center;
+	background-size: cover;
+	opacity: 80%
+}
+.Card:nth-child(6){
+	grid-area: c6;
+	background-image: url("pics/NyanC.gif");
+	height: 100%;
+	width: 100%;
+	background-position: center;
+	background-size: cover;
+	opacity: 80%
+}
+@media (max-width: 400px){
+	.main{
+		grid-template-columns: 1fr;
+		grid-template-rows: repeat(6, 100px);
+		grid-template-areas: initial ;
+	}
+
+	.Card{
+		grid-area: initial !important;
+	}
+}
